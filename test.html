@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test JavaScript</title>
+  </head>
+  <body>
+    <!-- Inline JavaScript -->
+    <script type="text/javascript">
+      document.write("Test JavaScript");
+    </script>
+    <script type="text/javascript" src="extern.js">
+    </script>
+    <script type="text/javascript">
+		function meinJavaScript() {
+			document.write("<p>Schau mal!</p>");
+}
+</script>
+    <button type="button" onclick="meinJavaScript()">
+      Schau mal!
+    </button>
+
+
+    <button type="button" onmouseover="document.write('gut gemacht')">
+      Schau mal!
+    </button>
+<br>
+    <script type="text/javascript">
+      var nurDeklariert;
+      document.write("nurDeklariert: " + nurDeklariert + "<br>");
+
+      nurDeklariert = "initialisiert"
+      document.write(nurDeklariert + "<br>");
+
+      //Zahlen
+      var zahl1 = 42;
+      var zahl2 = 2.5;
+      var zahl3 = zahl1 - zahl2;
+
+      document.write(zahl1 + "<br>");
+      document.write(zahl2 + "<br>");
+      document.write(zahl3 + "<br>");
+
+      var geteiltDurchZeit = 40/"zwei";
+      if (isNaN(geteiltDurchZeit)) {
+        document.write("ungültige Nummer <br>");
+      } else {
+        document.write("geteiltDurchZeit: " + geteiltDurchZeit + "<br>")
+      }
+      var array =[1, 4, 3, true];
+      document.write("element: " + array[2] + "<br>");
+    </script>
+
+<script type="text/javascript">
+//eindimensionale array
+var a = [1, 5, 6, 2, 9];
+document.write("a[2] = "+ a[2] + "<br>")
+document.write("a[3] = "+ a[3] + "<br>")
+
+//assoziative arrays
+var z = {preis: 1.95, name: "test", quantity: 27 };
+document.write("z[preis] = " + z["preis"] + "<br>")
+
+//multidimensionales arrays
+var y = [  [5, 6, 7], [8, 9, 10] ]
+document.write("y[0][2]= " + y[0][2] +"<br>" )
+
+</script>
+    <p>&copy; by Lowin</p>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seitenrechner</title>
+    <style>
+  body {
+    background-color: lightblue;
+    text-align: center;
+    border: solid 10px white;
+    padding: 20px;
+    margin: 50px;
+  }
+    </style>
+  </head>
+  <body>
+<h1>Seitenrechner</h1>
+<br>
+<script type="text/javascript">
+/* Fenster schreiben mit Abfrage: Wünschen sie 12, 24 oder 48 Monate Laufzeit?
+für die jeweiligen Zahlen etwas ausgeben, für Kredit 'sie müssen 4% Zinsen zahlen'
+ungültige Eingabe Hinweis */
+
+  var book = parseInt(prompt("Willkommen beim Seitenrechner. Wieviele Seiten hat dein Buch?"));
+  var pages = parseInt(prompt("Wie viele Seiten willst du pro Tag lesen? 10, 20 oder 30"));
+
+
+  switch (pages) {
+    case 10:
+        document.write("Das ist ein guter Anfang. Du wirst " + book / pages + " Tage benötigen, um das Buch zu lesen.");
+      break;
+      case 20:
+          document.write("Das nenne ich ein solides Vorhaben. Du wirst " + book / pages + " Tage benötigen, um das Buch zu lesen.");
+          break;
+      case 30:
+          document.write("Das ist ambitioniert. Super! Du wirst " + book / pages + " Tage benötigen, um das Buch zu lesen.");
+          break;
+    default:
+        document.write("Du hast einen ungültigen Wert eingegeben!");
+  }
+</script>
+  </body>
+</html>

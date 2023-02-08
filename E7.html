@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Geschwindigkeitscheck</title>
+  </head>
+  <body>
+<script type="text/javascript">
+/* Geschwindigkeit abfragen mit fenster
+Blitzer gibt etwas aus zu schnell, richtige geschwindigkeit
+*/
+
+  var speed = parseInt(prompt("Wie schnell fährt das Auto?"));
+  if (speed <= 30) {
+  document.write("Richtige Geschwindigkeit!");
+} else if (speed <= 40) {
+  document.write("Grenzwertig.");
+  }
+  else {
+  document.write("Zu schnell. Slow down!");
+}
+
+</script>
+  </body>
+</html>

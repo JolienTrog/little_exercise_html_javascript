@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Geschwindigkeitscheck</title>
+  </head>
+  <body>
+<script type="text/javascript">
+/* Fenster schreiben mit Abfrage: Wünschen sie 12, 24 oder 48 Monate Laufzeit?
+für die jeweiligen Zahlen etwas ausgeben, für Kredit 'sie müssen 4% Zinsen zahlen'
+ungültige Eingabe Hinweis */
+
+  var credit = parseInt(prompt("Höhe des Kredits?"));
+  var interest = parseInt(prompt("Wünschen Sie 12, 24 oder 48 Monate Laufzeit?"));
+
+
+  switch (interest) {
+    case 12:
+        document.write("Sie müssen 4% Zinsen zahlen, das entspricht: " + 0.04 * credit + "€ Zinsen.");
+      break;
+    case 24:
+        document.write("Sie müssen 3% Zinsen zahlen, das entspricht: " + 0.03 * credit + "€ Zinsen.");
+        break;
+    case 48:
+        document.write("Sie müssen 2% Zinsen zahlen, das entspricht: " + 0.02 * credit + "€ Zinsen.)");
+        break;
+    default:
+        document.write("Sie haben einen ungültigen Wert eingegeben!");
+  }
+</script>
+  </body>
+</html>
